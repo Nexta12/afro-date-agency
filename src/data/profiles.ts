@@ -1,0 +1,237 @@
+export interface Profile {
+  id: string;
+  code: string;
+  name: string;
+  age: number;
+  gender: "Female" | "Male";
+  category: "Sugar Mummy" | "Sugar Daddy" | "Gay & Lesbian";
+  location: string;
+  country: string;
+  occupation: string;
+  allowanceRange: string;
+  photo: string;
+  status: "Verified Active" | "VIP Premium" | "Immediate Match";
+  bio: string;
+  lookingFor: string;
+  interests: string[];
+  requirements: string[];
+}
+
+export const profiles: Profile[] = [
+  {
+    id: "sm-01",
+    code: "AFRO-SM-001",
+    name: "Chief Mrs. Folake A.",
+    age: 44,
+    gender: "Female",
+    category: "Sugar Mummy",
+    location: "Victoria Island, Lagos",
+    country: "Nigeria",
+    occupation: "Oil & Gas Marine Logistics Director",
+    allowanceRange: "₦1,200,000 - ₦2,000,000 / month",
+    photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+    status: "VIP Premium",
+    bio: "Accomplished businesswoman with operations in Lagos and Aberdeen. I spend long weeks traveling and want a well-mannered, ambitious young gentleman (21-34) to accompany me on private retreats, provide genuine warmth, and intellectual conversation. Full upkeep, car gift, and business seed grants guaranteed for loyalty.",
+    lookingFor: "Neat, energetic, ambitious young man aged 22 - 32. Must be respectful, drama-free, and discreet.",
+    interests: ["Fine Dining", "Golf & Tennis", "International Vacations", "Art Exhibitions"],
+    requirements: ["Clean criminal background", "Strict confidentiality agreement", "Ready for weekend getaways"]
+  },
+  {
+    id: "sm-02",
+    code: "AFRO-SM-002",
+    name: "Hajiya Amina B.",
+    age: 39,
+    gender: "Female",
+    category: "Sugar Mummy",
+    location: "Maitama, Abuja",
+    country: "Nigeria",
+    occupation: "Government Contractor & Real Estate Investor",
+    allowanceRange: "₦1,500,000 - ₦2,500,000 / month",
+    photo: "https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=800&q=80",
+    status: "Verified Active",
+    bio: "Living between Abuja and Dubai. I oversee multiple infrastructure developments. Looking for a mature, respectful partner who understands high-society etiquette. You will enjoy total financial freedom, luxury housing allowance, and trips abroad.",
+    lookingFor: "Polite, good-looking gentleman aged 24 - 35 with positive energy and great grooming.",
+    interests: ["Dubai shopping trips", "Luxury cars", "Private boat cruises", "Spa days"],
+    requirements: ["Discretion is #1 rule", "No social media broadcasting", "Available twice a month"]
+  },
+  {
+    id: "sm-03",
+    code: "AFRO-SM-003",
+    name: "Dr. Victoria O.",
+    age: 42,
+    gender: "Female",
+    category: "Sugar Mummy",
+    location: "Airport Residential Area, Accra",
+    country: "Ghana",
+    occupation: "Pharmaceutical Company Owner",
+    allowanceRange: "GH₵15,000 - GH₵25,000 / month",
+    photo: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=800&q=80",
+    status: "Immediate Match",
+    bio: "Divorced and dedicated to building my medical empire in Ghana. I need a charming, romantic guy who can help me unwind on weekends and make me laugh. I provide complete financial pampering, school fee assistance, or capital for business.",
+    lookingFor: "Young man aged 21 - 30 in Accra or Kumasi. Must be humble, fit, and fun-loving.",
+    interests: ["Beach resorts", "Live jazz music", "Wine tasting", "Gym & Wellness"],
+    requirements: ["Respectful attitude", "Clean health status", "Consistent communication"]
+  },
+  {
+    id: "sm-04",
+    code: "AFRO-SM-004",
+    name: "Lady Brenda K.",
+    age: 47,
+    gender: "Female",
+    category: "Sugar Mummy",
+    location: "Sandton / Rosebank, Johannesburg",
+    country: "South Africa",
+    occupation: "Telecoms Infrastructure Consultant",
+    allowanceRange: "R40,000 - R65,000 / month",
+    photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+    status: "VIP Premium",
+    bio: "High net-worth executive living in Sandton. I enjoy private wine estate holidays in Cape Town and international shopping. I need an ambitious young man to provide pleasant companionship and affection without emotional clinginess.",
+    lookingFor: "Tall, sharp young gentleman aged 23 - 35 with great hygiene and ambition.",
+    interests: ["Cape Town vineyards", "Fashion weeks", "High-end restaurants", "Horse racing"],
+    requirements: ["Total privacy", "Passport ready for travel", "Reliable and punctual"]
+  },
+  {
+    id: "sm-05",
+    code: "AFRO-SM-005",
+    name: "Barrister Nicole E.",
+    age: 41,
+    gender: "Female",
+    category: "Sugar Mummy",
+    location: "Canary Wharf, London / Lagos Diaspora",
+    country: "United Kingdom",
+    occupation: "Senior Corporate Maritime Attorney",
+    allowanceRange: "£3,000 - £4,500 / month",
+    photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+    status: "Verified Active",
+    bio: "British-Nigerian legal practitioner based in East London with frequent visits to West Africa. I am seeking a mature, handsome African brother or diaspora student for mutually beneficial companionship, dining dates, and overseas travel.",
+    lookingFor: "Intelligent, articulate young man aged 24 - 36 based in UK or West Africa.",
+    interests: ["West End theatre", "Fine dining", "Boutique hotels", "Global affairs"],
+    requirements: ["Valid international travel docs", "Discreet demeanor", "Non-smoker preferred"]
+  },
+  {
+    id: "sm-06",
+    code: "AFRO-SM-006",
+    name: "Senator (Mrs) Patricia M.",
+    age: 50,
+    gender: "Female",
+    category: "Sugar Mummy",
+    location: "GRA Phase 2, Port Harcourt",
+    country: "Nigeria",
+    occupation: "Industrial Logistics & Import Magnate",
+    allowanceRange: "₦2,000,000 - ₦3,500,000 / month",
+    photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80",
+    status: "VIP Premium",
+    bio: "A prominent socialite and heavy industry player in the Niger Delta. Due to my sensitive public role, I require someone trustworthy who values secrecy above everything else. Guaranteed luxury lifestyle, VIP car, and executive business contacts.",
+    lookingFor: "Faithful, handsome, well-built young man aged 23 - 33. Zero gossip, 100% loyalty.",
+    interests: ["Private yachting", "Luxury spa retreats", "Classical highlife", "Charity galas"],
+    requirements: ["Strict NDA signed with Afro-Connect Agency", "Drug-free", "Absolute loyalty"]
+  },
+  {
+    id: "sd-01",
+    code: "AFRO-SD-001",
+    name: "Chief Engr. Alistair K.",
+    age: 53,
+    gender: "Male",
+    category: "Sugar Daddy",
+    location: "Ikoyi, Lagos & Houston, TX",
+    country: "Nigeria / USA",
+    occupation: "Offshore Drilling & Energy Executive",
+    allowanceRange: "₦1,500,000 - ₦3,000,000 / month",
+    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+    status: "VIP Premium",
+    bio: "Extremely busy energy executive. I spend half the month on offshore projects and the other half in Ikoyi and Houston. Seeking a gorgeous, sweet-tempered young lady (19-28) to pamper with luxury lifestyle, allowance, rent settlement, and international shopping.",
+    lookingFor: "Beautiful, charming young lady (undergraduate or model) aged 19 - 28. Submissive and affectionate.",
+    interests: ["Private jet travel", "Fine scotch", "Luxury watches", "High-end shopping"],
+    requirements: ["Pleasant personality", "Discreet", "Must love traveling"]
+  },
+  {
+    id: "sd-02",
+    code: "AFRO-SD-002",
+    name: "Hon. Marcus Danjuma",
+    age: 49,
+    gender: "Male",
+    category: "Sugar Daddy",
+    location: "Asokoro, Abuja",
+    country: "Nigeria",
+    occupation: "Mining Consortia & Aviation Investor",
+    allowanceRange: "₦2,500,000 - ₦4,000,000 / month",
+    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+    status: "Immediate Match",
+    bio: "Top tier investor in aviation and minerals. I need a stunning, intelligent female companion for VIP diplomatic functions, private dinners, and overseas weekends in Paris and Dubai. Everything is sponsored with no expenses spared.",
+    lookingFor: "Classy, elegant lady aged 20 - 29 with good conversational skills and great style.",
+    interests: ["Polo club", "Private aviation", "Diplomatic dinners", "Luxury villas"],
+    requirements: ["High emotional intelligence", "No public drama", "Total privacy guaranteed"]
+  },
+  {
+    id: "lgbt-01",
+    code: "AFRO-LGBT-001",
+    name: "Christian & Partner S.",
+    age: 38,
+    gender: "Male",
+    category: "Gay & Lesbian",
+    location: "Cotonou / Abidjan / Paris",
+    country: "Benin / Ivory Coast",
+    occupation: "Luxury Hospitality & Brand Curator",
+    allowanceRange: "CFA 2,000,000 - CFA 3,500,000 / month",
+    photo: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
+    status: "Verified Active",
+    bio: "Discreet international hospitality consultant. Seeking a genuine, handsome same-sex partner who appreciates cultured lifestyle, luxury dining, and travel across West Africa and Europe in complete privacy.",
+    lookingFor: "Clean, handsome young man aged 22 - 34 who values mutual respect and discretion.",
+    interests: ["Modern art", "Culinary exploration", "Private villa retreats", "Fitness"],
+    requirements: ["Strict privacy protocol", "Open-minded and mature", "Discreet profile"]
+  },
+  {
+    id: "lgbt-02",
+    code: "AFRO-LGBT-002",
+    name: "Danielle V.",
+    age: 36,
+    gender: "Female",
+    category: "Gay & Lesbian",
+    location: "Cape Town / Johannesburg",
+    country: "South Africa",
+    occupation: "Tech Venture Capitalist",
+    allowanceRange: "R45,000 - R70,000 / month",
+    photo: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80",
+    status: "VIP Premium",
+    bio: "Venture capitalist funding African startups. Looking for an educated, attractive female partner for genuine companionship, romantic weekends, and luxury support.",
+    lookingFor: "Smart, stylish woman aged 22 - 32 seeking upscale companionship and financial comfort.",
+    interests: ["Tech conferences", "Mountain hiking", "Fine wine", "Architecture"],
+    requirements: ["Emotional maturity", "Good communication", "Independent mindset"]
+  },
+  {
+    id: "sm-07",
+    code: "AFRO-SM-007",
+    name: "Madam Claudine D.",
+    age: 46,
+    gender: "Female",
+    category: "Sugar Mummy",
+    location: "Cocody, Abidjan",
+    country: "Ivory Coast",
+    occupation: "Cocoa Export & Commercial Real Estate",
+    allowanceRange: "CFA 1,800,000 - CFA 2,800,000 / month",
+    photo: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+    status: "Verified Active",
+    bio: "Leading agricultural exporter based in Abidjan. I frequently visit Ghana, Togo, and France. Seeking a respectful young partner for sweet companionship. Full financial upkeep, luxury apartment rent, and business contracts provided.",
+    lookingFor: "Young man aged 22 - 32. Must be clean, loyal, and capable of keeping secrets.",
+    interests: ["French cuisine", "Beach villas in Assinie", "Afrobeats & Jazz", "Travel"],
+    requirements: ["Discretion is mandatory", "Friendly and caring", "No bad habits"]
+  },
+  {
+    id: "sm-08",
+    code: "AFRO-SM-008",
+    name: "Dr. Genevieve W.",
+    age: 43,
+    gender: "Female",
+    category: "Sugar Mummy",
+    location: "Atlanta, GA / Lagos Liaison",
+    country: "USA / Nigeria",
+    occupation: "Chief Medical Officer & Healthcare Owner",
+    allowanceRange: "$3,500 - $5,500 / month",
+    photo: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80",
+    status: "VIP Premium",
+    bio: "African-American healthcare entrepreneur with direct ties to Nigeria and Ghana. I travel frequently to West Africa for philanthropic and business projects. Looking for an energetic, handsome gentleman to pamper and build a fulfilling connection with.",
+    lookingFor: "Charming, well-groomed brother aged 23 - 35 in Lagos, Abuja, or visiting USA.",
+    interests: ["Medical charities", "Cruises", "Luxury spas", "Afrobeat concerts"],
+    requirements: ["International passport ready", "Clean track record", "Genuine warmth"]
+  }
+];

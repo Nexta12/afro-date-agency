@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #09090b;
+    --foreground: #f4f4f5;
+  }
+}
+
+body {
+  background-color: #09090b;
+  color: #f4f4f5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom AfroIntroductions Luxury Theme Utilities */
+.bg-wine-950 {
+  background-color: #4c0519;
+}
+.bg-wine-900 {
+  background-color: #881337;
+}
+.bg-wine-800 {
+  background-color: #9f1239;
+}
+.text-wine-400 {
+  color: #fb7185;
+}
+.text-wine-300 {
+  color: #fda4af;
+}
+.border-wine-800 {
+  border-color: #9f1239;
+}
+.border-wine-900 {
+  border-color: #881337;
+}
+
+.bg-gold-500 {
+  background-color: #f59e0b;
+}
+.bg-gold-600 {
+  background-color: #d97706;
+}
+.text-gold-400 {
+  color: #fbbf24;
+}
+.text-gold-300 {
+  color: #fde68a;
+}
+.border-gold-500\/30 {
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.wine-gradient {
+  background: linear-gradient(135deg, #4c0519 0%, #881337 50%, #9f1239 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.dark-luxury-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(136, 19, 55, 0.25) 0%, rgba(9, 9, 11, 0.98) 75%);
+}
+
+.glass-panel {
+  background: rgba(24, 24, 27, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-wine {
+  background: rgba(76, 5, 25, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 63, 94, 0.2);
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, #f59e0b 0%, #fef08a 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.4), 0 0 30px rgba(136, 19, 55, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.7), 0 0 45px rgba(136, 19, 55, 0.5);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #881337;
+}
